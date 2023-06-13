@@ -1,22 +1,29 @@
 * {
   font-family: "Poppins", sans-serif;
 }
-
+html {
+  height: 100%;
+}
 body {
-  background-color: rgb(30, 30, 30);
   display: block;
-  top: 0;
+  background-color: rgb(30, 30, 30);
   margin: 0;
   padding: 0;
   height: 100%;
 }
 
-table,
+table {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 80%;
+}
+
 th,
 td {
   border: 1px solid black;
   min-width: 30%;
-  min-height: 80px;
+  height: 40px;
 }
 td {
   text-align: center;
@@ -25,8 +32,12 @@ td {
 tr {
   min-height: 100px;
 }
-h1 {
-  text-decoration: underline;
+
+table + p {
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 25px;
 }
 
 .button {
@@ -49,25 +60,91 @@ img + h1 {
   display: inline-block;
 }
 
-.parallax {
+.bgimg {
   position: relative;
-  background-image: url("../images/background_1.jpg");
-  opacity: 0.5;
-
   width: 100%;
-  min-height: 100%;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+.bgimg-1 {
+  background-image: url("../images/background_1.jpg");
+  min-height: 100%;
+}
 
-.caption {
+.bgimg-2 {
+  background-image: url("../images/background_2.jpg");
+  min-height: 500px;
+}
+
+.bgimg-3 {
+  background-image: url("../images/background_3.jpg");
+  min-height: 500px;
+}
+
+.bgimg-4 {
+  background-image: url("../images/background_4.jpg");
+  min-height: 500px;
+}
+
+.bgimg::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.bgimg + section h2 {
+  text-transform: uppercase;
+  letter-spacing: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+.bgimg ~ section {
+  color: rgb(80, 80, 80);
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+  padding: 50px 80px;
+  text-align: justify;
+}
+
+section ul {
+  list-style-type: circle;
+}
+
+section li {
+  margin: 10px 0;
+}
+
+.bgimg > h1 {
+  text-decoration: none;
+  opacity: initial;
+  font-size: 4em;
+  text-transform: uppercase;
   position: absolute;
   left: 0;
   top: 50%;
   width: 100%;
   text-align: center;
   color: white;
-  letter-spacing: 10px;
+  letter-spacing: 20px;
+}
+
+.bgimg > h2 {
+  text-decoration: none;
+  opacity: initial;
+  font-size: 2.4em;
+  text-transform: uppercase;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: white;
+  letter-spacing: 20px;
 }
