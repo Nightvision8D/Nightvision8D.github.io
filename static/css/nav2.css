@@ -1,0 +1,16 @@
+.header {
+    position: fixed;
+    top: -100px;
+    width: 100%;
+    transition: top 0.3s;
+    background-color: #000c1d;
+    z-index: 999;
+  }
+  
+  .header p {
+    color: white;
+  }
+  .header.sticky {
+    top: 0;
+  }
+  
