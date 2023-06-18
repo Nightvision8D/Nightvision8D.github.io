@@ -2,15 +2,32 @@
     position: fixed;
     top: -100px;
     width: 100%;
-    transition: top 0.3s;
+    transition: top 0.4s;
     background-color: #000c1d;
     z-index: 999;
   }
   
-  .header p {
-    color: white;
+  .header ul {
+    list-style-type: none;
+    margin: 1;
+    padding: 1;
+
   }
+  .header li{
+    display: inline;
+    font-size: 1.2em;
+    /*border-right: 1px solid #bbb; */
+  }
+  
   .header.sticky {
     top: 0;
   }
   
+  .header a {
+    padding: 8px;
+    color: white;
+  }
+
+  .header a:hover {
+    background-color: #000513;
+  }
