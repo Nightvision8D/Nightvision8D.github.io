@@ -149,36 +149,43 @@ section li {
   letter-spacing: 20px;
 }
 .podest {
-
-  padding: 2em;
+  padding: 3em;
   display: grid;
   gap: 0.5em;
-  grid-template-columns: 20% 20% 20%;
+  grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
   grid-template-rows: 2em 2em 4em;
+  
 }
 
+
 .podest * {
-  border: 1px solid;
   padding-top: 0.5em;
   text-align: center;
   border-radius: 3px 3px 0 0;
-
+  font-size: 1.2em;
 }
 
 erster {
-
   grid-row: 1/-1;
   background-color: gold;
+  border: 1px solid;
+
 }
 
 zweiter {
-
   grid-row: 2/-1;
   background-color: silver;
+  border: 1px solid;
+
 }
 
 dritter {
-
   grid-row: 3/-1;
   background-color: #cb8e00;
+  border: 1px solid;
+
+}
+space {
+  grid-row: 1/-1;
+
 }
