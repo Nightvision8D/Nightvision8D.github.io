@@ -148,3 +148,37 @@ section li {
   color: white;
   letter-spacing: 20px;
 }
+.podest {
+
+  padding: 2em;
+  display: grid;
+  gap: 0.5em;
+  grid-template-columns: 20% 20% 20%;
+  grid-template-rows: 2em 2em 4em;
+}
+
+.podest * {
+  border: 1px solid;
+  padding-top: 0.5em;
+  text-align: center;
+  border-radius: 3px 3px 0 0;
+
+}
+
+erster {
+
+  grid-row: 1/-1;
+  background-color: gold;
+}
+
+zweiter {
+
+  grid-row: 2/-1;
+  background-color: silver;
+}
+
+dritter {
+
+  grid-row: 3/-1;
+  background-color: #cb8e00;
+}
