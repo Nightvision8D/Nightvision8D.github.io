@@ -87,7 +87,7 @@ a > img {
   text-decoration: underline;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown:has(:hover, :active) .dropdown-content {
   display: block;
 }
 
