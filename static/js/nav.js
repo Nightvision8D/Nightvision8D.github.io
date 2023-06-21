@@ -15,4 +15,8 @@ window.addEventListener("load", function () {
     let dropBtns = this.document.getElementsByClassName("dropbtn");
     dropBtns[0].classList.add("underline");
   }
+  if (current.startsWith("/match")) {
+    let dropBtns = this.document.getElementsByClassName("dropbtn");
+    dropBtns[1].classList.add("underline");
+  }
 });
