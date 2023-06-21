@@ -132,14 +132,13 @@ img + h1 {
   min-height: 500px;
 }
 
-.bgimg > a {
+.bgimg > a:first-child {
   text-decoration: none;
   opacity: initial;
   font-size: 0.5em;
   position: absolute;
   right: 10px;
   bottom: 5px;
-  width: 100%;
   text-align: right;
   color: rgb(158, 158, 158);
 }
