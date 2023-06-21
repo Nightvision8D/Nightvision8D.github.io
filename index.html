@@ -5,23 +5,38 @@
     <link rel="stylesheet" href="static/css/main.css" />
     <link rel="stylesheet" href="static/css/index.css" />
     <link rel="stylesheet" href="static/css/nav2.css" />
-    <script src="main.js"></script>
+    <script src="static/js/main.js"></script>
 
     <link rel="icon" href="static/images/favicon.png" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width initial-scale=1" />
+    <script src="static/js/nav.js"></script>
   </head>
   <body>
     <div class="bgimg bgimg-1">
+      <a href="#fn01" id="fnref01">[1]</a>
       <h1>Tischtennis Tunier</h1>
     </div>
 
     <div class="header">
       <ul>
-        <li><a href="default.asp">Home</a></li>
-        <li><a href="news.asp">News</a></li>
-        <li><a href="contact.asp">Contact</a></li>
-        <li><a href="about.asp">About</a></li>
+        <li>
+          <a class="link" href="/"
+            ><img src="static/images/icons/home.png" /> Home</a
+          >
+        </li>
+        <li class="dropdown">
+          <a class="dropbtn link"
+            ><img src="static/images/icons/tabletennis.png" /> Turniere</a
+          >
+          <div class="dropdown-content">
+            <a href="smallmatch.html">4-Spieler Turnier</a>
+            <a href="#match">8-Spieler Turnier</a>
+            <a href="bigmatch.html">16-Spieler Turnier</a>
+          </div>
+        </li>
+        <li><a class="link" href="contact.asp">Contact</a></li>
+        <li><a class="link" href="about.asp">About</a></li>
       </ul>
     </div>
 
@@ -29,8 +44,8 @@
       <h2>Herzlich Willkommen!</h2>
       <p>
         Herzlich Willkommen auf der Website für das diesjährige Tischtennis
-        Tunier des SC Bikini Bottom. Hier klären wir alles nötige für einen
-        reibungslosen Start in das Tunier!
+        Tunier des <abbr>SCBB</abbr> (SC Bikini Bottom). Hier klären wir alles
+        nötige für einen reibungslosen Start in das Tunier!
       </p>
       <p>
         Erstmal danke für dein Interesse. Damit du alles weißt schau dir bitte
@@ -38,6 +53,7 @@
       </p>
     </section>
     <div class="bgimg bgimg-2">
+      <a href="#fn02" id="fnref02">[2]</a>
       <h2>Was ist mitzubringen?</h2>
     </div>
     <section>
@@ -46,7 +62,7 @@
         darauf achten folgende Dinge dabei zu haben:
       </p>
       <ul>
-        <li>Tischtennis Schläger</li>
+        <li><abbr>TT</abbr> (Tischtennis) Schläger</li>
         <li>Hallenschuhe</li>
         <li>Sportkleidung</li>
         <li>Trinkflasche</li>
@@ -54,6 +70,7 @@
       </ul>
     </section>
     <div class="bgimg bgimg-3">
+      <a href="#fn03" id="fnref03">[3]</a>
       <h2>Wie registriert man sich?</h2>
     </div>
     <section>
@@ -69,54 +86,121 @@
       </p>
     </section>
     <div class="bgimg bgimg-4">
-      <h2>Tunierplan</h2>
+      <a href="#fn04" id="fnref04">[4]</a>
+      <h2>Turnierplan</h2>
     </div>
-    <section>
+    <section id="match">
+      <h2>Turnier mit 8 Spielern</h2>
+      <time datetime="2032-08-23T08:00:00">23.08.2032 08:00</time>
       <table>
         <tbody>
           <tr>
-            <td>a</td>
-            <td rowspan="2">a</td>
-            <td rowspan="4">c</td>
-            <td rowspan="8">e</td>
+            <td>Gerhardt</td>
+            <td rowspan="2">Gerhardt</td>
+            <td rowspan="4">Gerhardt</td>
+            <td rowspan="8">Marcel</td>
           </tr>
           <tr>
-            <td>b</td>
+            <td>Sigrun</td>
           </tr>
           <tr>
-            <td>c</td>
-            <td rowspan="2">c</td>
+            <td>Rike</td>
+            <td rowspan="2">Linda</td>
           </tr>
           <tr>
-            <td>d</td>
+            <td>Linda</td>
           </tr>
           <tr>
-            <td>e</td>
-            <td rowspan="2">e</td>
-            <td rowspan="4">e</td>
+            <td>Isabelle</td>
+            <td rowspan="2">Isabelle</td>
+            <td rowspan="4">Marcel</td>
           </tr>
           <tr>
-            <td>f</td>
+            <td>Ilona</td>
           </tr>
           <tr>
-            <td>g</td>
-            <td rowspan="2">g</td>
+            <td>Marcel</td>
+            <td rowspan="2">Marcel</td>
           </tr>
           <tr>
-            <td>h</td>
+            <td>Alexa</td>
           </tr>
         </tbody>
       </table>
+      <div class="buttons">
+        <h2>Weitere Turniere</h2>
+        <a class="button" href="smallmatch.html">4 SPIELER</a>
+        <a class="button" href="bigmatch.html">16 SPIELER</a>
+      </div>
       <div class="podest">
         <space></space>
-        <zweiter>Tom</zweiter>
-        <erster>Tomas</erster>
-        <dritter>Tim</dritter>
+        <zweiter>Gerhardt</zweiter>
+        <erster>Marcel</erster>
+        <dritter>Isabelle</dritter>
         <space></space>
-
-    </div>
+      </div>
       <p>Wir wünschen allen Teilnehmenden viel Erfolg!</p>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2629.6601923686126!2d8.9293839!3d48.7692852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479761838f1f1d2b%3A0xe5f90a45afa6efa4!2sRankbachhalle!5e0!3m2!1sde!2sde!4v1686924599279!5m2!1sde!2sde" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+    <div class="bgimg bgimg-5">
+      <a href="#fn05" id="fnref05">[5]</a>
+      <h2>Wo findest du uns?</h2>
+    </div>
+    <section id="position">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2629.6601923686126!2d8.9293839!3d48.7692852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479761838f1f1d2b%3A0xe5f90a45afa6efa4!2sRankbachhalle!5e0!3m2!1sde!2sde!4v1686924599279!5m2!1sde!2sde"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+      <audio controls>
+        <source src="static/music/playback.mp3" type="audio/mpeg" />
+      </audio>
+    </section>
+    <div class="bgimg bgimg-6">
+      <a href="#fn06" id="fnref06">[6]</a>
+      <h2>Rechtliche Informationen</h2>
+    </div>
+    <section>
+      <h2>Fußnoten</h2>
+      <ol>
+        <li id="fn01" role="doc-footnote">
+          <a href="https://tv-dellbrueck.de/tischtennis/">Bildquelle</a>
+        </li>
+        <li id="fn02" role="doc-footnote">
+          <a
+            href="https://tt-shop-jesumann.de/media/31/24/1a/1660552230/TT-Banner-Tischtennis.jpg"
+            >Bildquelle</a
+          >
+        </li>
+        <li id="fn03" role="doc-footnote">
+          <a href="https://www.bra.nrw.de/bildung-schule/pruefungen"
+            >Bildquelle</a
+          >
+        </li>
+        <li id="fn04" role="doc-footnote">
+          <a
+            href="https://www.rundblick-niedersachsen.de/kleiner-ball-grosser-sport/"
+            >Bildquelle</a
+          >
+        </li>
+        <li id="fn05" role="doc-footnote">
+          <a
+            href="https://as2.ftcdn.net/v2/jpg/03/15/12/21/1000_F_315122151_YLRvOsGUpbGvjUnwXA7r4rxVEk9HIamh.jpg"
+            >Bildquelle</a
+          >
+        </li>
+        <li id="fn06" role="doc-footnote">
+          <a
+            href="https://www.one.de/images/infocenter/rechtliches/rechtliches-info.jpg"
+            >Bildquelle</a
+          >
+        </li>
+      </ol>
+      <h2>Impressum</h2>
+      <h2>Haftungsausschluss</h2>
     </section>
   </body>
 </html>

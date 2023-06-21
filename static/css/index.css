@@ -2,11 +2,26 @@ h2 ~ ul {
   list-style-type: circle;
 }
 
-section table {
-  border-collapse: collapse;
-}
-
-section > h2 {
+section h2 {
   font-size: 1.2em;
 }
 
+.buttons {
+  width: 100%;
+  margin-top: 40px;
+}
+
+.buttons a {
+  display: inline-block;
+  margin: 0px 10px;
+}
+
+#position {
+  display: grid;
+  gap: 20px;
+  justify-content: center;
+}
+
+#position > audio {
+  width: 100%;
+}
