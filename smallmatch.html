@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <title>Tischtennis Tunier</title>
+    <link rel="stylesheet" href="static/css/main.css" />
+    <link rel="stylesheet" href="static/css/nav2.css" />
+    <link rel="icon" href="static/images/favicon.png" />
+    <meta charset="utf-8" />
+    <script src="static/js/nav.js"></script>
+    <style>
+      .header {
+        position: absolute !important;
+        top: inherit !important;
+      }
+      .header + section {
+        margin-top: 80px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="bgimg bgimg-4">
+        <h2>Turnier mit 4 Spielern</h2>
+      </div>
+      <div class="header">
+        <ul>
+          <li>
+            <a class="link" href="/"
+              ><img src="static/images/icons/home.png" /> Home</a
+            >
+          </li>
+          <li class="dropdown">
+            <a class="dropbtn link"
+              ><img src="static/images/icons/tabletennis.png" /> Turniere</a
+            >
+            <div class="dropdown-content">
+              <a href="smallmatch.html">4-Spieler Turnier</a>
+              <a href="/#match">8-Spieler Turnier</a>
+              <a href="bigmatch.html">16-Spieler Turnier</a>
+            </div>
+          </li>
+          <li><a class="link" href="contact.asp">Contact</a></li>
+          <li><a class="link" href="about.asp">About</a></li>
+        </ul>
+      </div>
+      <section>
+        <p>
+          Das Tunier findet statt am
+          <time datetime="2032-08-23T08:00:00">23.08.2032 08:00</time>
+        </p>
+        <table>
+          <tr>
+            <td>Utz</td>
+            <td rowspan="2">Till</td>
+            <td rowspan="4">Vera</td>
+          </tr>
+          <tr>
+            <td>Till</td>
+          </tr>
+          <tr>
+            <td>Armin</td>
+            <td rowspan="2">Vera</td>
+          </tr>
+          <tr>
+            <td>Vera</td>
+          </tr>
+        </table>
+        <div class="podest">
+          <space></space>
+          <zweiter>Till</zweiter>
+          <erster>Vera</erster>
+          <dritter>Utz</dritter>
+          <space></space>
+        </div>
+        <p>Wir wünschen viel Erfolg!</p>
+        <a class="button" href="javascript:history.back()">Zurück</a>
+      </section>
+    </main>
+    <hr />
+    <footer>
+      <p>Impressum / Haftungsausschluss</p>
+    </footer>
+  </body>
+</html>
