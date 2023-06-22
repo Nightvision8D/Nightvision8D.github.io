@@ -12,3 +12,12 @@
 .info tr > td:first-child {
   font-weight: bold;
 }
+.header + section {
+  margin-top: 150px;
+}
+
+@media (min-width: 620px) {
+  .header + section {
+    margin-top: 80px;
+  }
+}

@@ -11,139 +11,127 @@
     <link rel="icon" href="../static/images/favicon.png" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width initial-scale=1" />
-    <script src="../static/js/nav.js"></script>
     <script src="../static/js/matches.js"></script>
-    <style>
-      .header {
-        position: absolute;
-        top: inherit;
-      }
-      .header + section {
-        margin-top: 80px;
-      }
-    </style>
   </head>
   <body>
-    <main>
-      <div class="bgimg bgimg-4">
-        <h2>Turnier 2030</h2>
+    <div class="bgimg bgimg-4">
+      <h2>Turnier 2030</h2>
+    </div>
+    <div class="header">
+      <ul>
+        <li>
+          <a class="link" href="../index.html"
+            ><img src="../static/images/icons/home.png" /> Home</a
+          >
+        </li>
+        <li class="dropdown">
+          <a class="dropbtn link"
+            ><img src="../static/images/icons/tabletennis.png" /> Turniere</a
+          >
+          <div class="dropdown-content">
+            <a href="../smallmatch.html">4-Spieler Turnier</a>
+            <a href="../#match">8-Spieler Turnier</a>
+            <a href="../bigmatch.html">16-Spieler Turnier</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a class="link dropbtn"
+            ><img src="../static/images/icons/clock.png" /> Vergangene
+            Turniere</a
+          >
+          <div class="dropdown-content">
+            <a href="match_2031.html">Turnier 2031</a>
+            <a href="match_2030.html">Turnier 2030</a>
+            <a href="match_2029.html">Turnier 2029</a>
+            <a href="match_2028.html">Turnier 2028</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <section>
+      <h2>Turnierdetails</h2>
+      <table class="info">
+        <tr>
+          <td>Nr.</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>Datum</td>
+          <td><time datetime="2030-09-03">03.09.2030</time></td>
+        </tr>
+        <tr>
+          <td>Ort</td>
+          <td>Bikini Bottom</td>
+        </tr>
+        <tr>
+          <td>Teilnehmerliste</td>
+          <td>
+            <ul>
+              <li>Wolfgang</li>
+              <li>Horst</li>
+              <li>Erika</li>
+              <li>Brunhild</li>
+              <li>Dagmar</li>
+              <li>Maxi</li>
+              <li>Erik</li>
+              <li>Gretel</li>
+            </ul>
+          </td>
+        </tr>
+      </table>
+    </section>
+    <hr />
+    <section>
+      <h2>Turnierablauf</h2>
+      <table>
+        <tbody>
+          <tr>
+            <td>Wolfgang (5)</td>
+            <td rowspan="2">Horst (7)</td>
+            <td rowspan="4">Brunhild (16)</td>
+            <td rowspan="8">Brunhild</td>
+          </tr>
+          <tr>
+            <td>Horst (11)</td>
+          </tr>
+          <tr>
+            <td>Erika (0)</td>
+            <td rowspan="2">Brunhild (11)</td>
+          </tr>
+          <tr>
+            <td>Brunhild (11)</td>
+          </tr>
+          <tr>
+            <td>Dagmar (22)</td>
+            <td rowspan="2">Maxi (13)</td>
+            <td rowspan="4">Gretel (14)</td>
+          </tr>
+          <tr>
+            <td>Maxi (24)</td>
+          </tr>
+          <tr>
+            <td>Erik (3)</td>
+            <td rowspan="2">Gretel (15)</td>
+          </tr>
+          <tr>
+            <td>Gretel (11)</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <hr />
+    <section>
+      <h2>Siegertreppe</h2>
+      <div class="podest">
+        <space></space>
+        <zweiter>Gretel</zweiter>
+        <erster>Brunhild</erster>
+        <dritter>Maxi</dritter>
+        <space></space>
       </div>
-      <div class="header">
-        <ul>
-          <li>
-            <a class="link" href="/"
-              ><img src="../static/images/icons/home.png" /> Home</a
-            >
-          </li>
-          <li class="dropdown">
-            <a class="dropbtn link"
-              ><img src="../static/images/icons/tabletennis.png" /> Turniere</a
-            >
-            <div class="dropdown-content">
-              <a href="../smallmatch.html">4-Spieler Turnier</a>
-              <a href="../#match">8-Spieler Turnier</a>
-              <a href="../bigmatch.html">16-Spieler Turnier</a>
-            </div>
-          </li>
-          <li class="dropdown">
-            <a class="link dropbtn"
-              ><img src="../static/images/icons/clock.png" /> Vergangene
-              Turniere</a
-            >
-            <div class="dropdown-content">
-              <a href="match_2031.html">Turnier 2031</a>
-              <a href="match_2030.html">Turnier 2030</a>
-              <a href="match_2029.html">Turnier 2029</a>
-              <a href="match_2028.html">Turnier 2028</a>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <section>
-        <h2>Turnierdetails</h2>
-        <table class="info">
-          <tr>
-            <td>Nr.</td>
-            <td>3</td>
-          </tr>
-          <tr>
-            <td>Datum</td>
-            <td><time datetime="2030-09-03">03.09.2030</time></td>
-          </tr>
-          <tr>
-            <td>Ort</td>
-            <td>Bikini Bottom</td>
-          </tr>
-          <tr>
-            <td>Teilnehmerliste</td>
-            <td>
-              <ul>
-                <li>Wolfgang</li>
-                <li>Horst</li>
-                <li>Erika</li>
-                <li>Brunhild</li>
-                <li>Dagmar</li>
-                <li>Maxi</li>
-                <li>Erik</li>
-                <li>Gretel</li>
-              </ul>
-            </td>
-          </tr>
-        </table>
-      </section>
-      <hr />
-      <section>
-        <h2>Turnierablauf</h2>
-        <table>
-          <tbody>
-            <tr>
-              <td>Wolfgang (5)</td>
-              <td rowspan="2">Horst (7)</td>
-              <td rowspan="4">Brunhild (16)</td>
-              <td rowspan="8">Brunhild</td>
-            </tr>
-            <tr>
-              <td>Horst (11)</td>
-            </tr>
-            <tr>
-              <td>Erika (0)</td>
-              <td rowspan="2">Brunhild (11)</td>
-            </tr>
-            <tr>
-              <td>Brunhild (11)</td>
-            </tr>
-            <tr>
-              <td>Dagmar (22)</td>
-              <td rowspan="2">Maxi (13)</td>
-              <td rowspan="4">Gretel (14)</td>
-            </tr>
-            <tr>
-              <td>Maxi (24)</td>
-            </tr>
-            <tr>
-              <td>Erik (3)</td>
-              <td rowspan="2">Gretel (15)</td>
-            </tr>
-            <tr>
-              <td>Gretel (11)</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-      <hr />
-      <section>
-        <h2>Siegertreppe</h2>
-        <div class="podest">
-          <space></space>
-          <zweiter>Gretel</zweiter>
-          <erster>Brunhild</erster>
-          <dritter>Maxi</dritter>
-          <space></space>
-        </div>
-        <h3 style="text-align: center">
-          Herzlichen Glückwunsch an Brunhild zum Sieg des Turniers 2030!
-        </h3>
-      </section>
-    </main>
+      <h3 style="text-align: center">
+        Herzlichen Glückwunsch an Brunhild zum Sieg des Turniers 2030!
+      </h3>
+    </section>
   </body>
 </html>

@@ -1,3 +1,8 @@
+main {
+  display: grid;
+  grid-auto-flow: row;
+}
+
 h2 ~ ul {
   list-style-type: circle;
 }
@@ -7,12 +12,18 @@ section h2 {
 }
 
 .buttons {
+  display: grid;
+  grid-auto-flow: row;
+  align-items: baseline;
+  gap: 10px;
   width: 100%;
   margin-top: 40px;
 }
 
 .buttons a {
   display: inline-block;
+  width: fit-content;
+  height: fit-content;
   margin: 0px 10px;
 }
 
@@ -40,9 +51,20 @@ section h2 {
   letter-spacing: 0.1em;
   transition: opacity 0.3s;
 }
-#start{
-  margin-top: 3em;
+
+#start {
+  margin-top: 8em;
 }
+
+@media (min-width: 620px) {
+  .buttons {
+    grid-auto-flow: column;
+  }
+  #start {
+    margin-top: 3em;
+  }
+}
+
 .bgimg-1 a.scroll:hover {
   opacity: 0.5;
 }

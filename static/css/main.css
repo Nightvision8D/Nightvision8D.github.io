@@ -93,7 +93,8 @@ img + h1 {
   width: 100%;
 }
 
-.bgimg ~ section {
+.bgimg ~ section,
+main section:first-child {
   color: rgb(80, 80, 80);
   background-color: rgb(255, 255, 255);
   text-align: center;

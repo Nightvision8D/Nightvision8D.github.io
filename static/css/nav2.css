@@ -1,10 +1,22 @@
 .header {
-  position: absolute; 
+  position: absolute;
   width: 100%;
   transition: top 0.4s;
   background: linear-gradient(45deg, rgb(14, 14, 14) 0%, rgb(29, 29, 29) 100%);
   z-index: 999;
   box-shadow: 0px 10px 5px rgba(20, 20, 20, 0.3);
+}
+
+.header > ul {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+@media (min-width: 620px) {
+  .header > ul {
+    flex-direction: row;
+  }
 }
 
 .header ul {
@@ -15,6 +27,7 @@
 .header li {
   display: inline;
   font-size: 1.3em;
+  margin: 5px 15px;
   /*border-right: 1px solid #bbb; */
 }
 
