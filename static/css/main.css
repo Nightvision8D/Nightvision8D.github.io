@@ -92,45 +92,48 @@ img + h1 {
   text-transform: uppercase;
   width: 100%;
 }
+.bgimg ~ section {
+  color: rgb(80, 80, 80);
+  background-color: rgb(255, 255, 255);
+  padding: 10px 10px;
+}
 
-.bgimg ~ section,
 main section:first-child {
   color: rgb(80, 80, 80);
   background-color: rgb(255, 255, 255);
-  text-align: center;
-  padding: 50px 80px;
-  text-align: justify;
-  font-size: 1.2em;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 90px;
 }
 
 .bgimg-1 {
   background-image: url("../images/background_1.jpg");
-  min-height: 100%;
+  min-height: 200px;
 }
 
 .bgimg-2 {
   background-image: url("../images/background_2.jpg");
-  min-height: 500px;
+  min-height: 200px;
 }
 
 .bgimg-3 {
   background-image: url("../images/background_3.jpg");
-  min-height: 500px;
+  min-height: 200px;
 }
 
 .bgimg-4 {
   background-image: url("../images/background_4.jpg");
-  min-height: 500px;
+  min-height: 200px;
 }
 
 .bgimg-5 {
   background-image: url("../images/background_5.png");
-  min-height: 500px;
+  min-height: 200px;
 }
 
 .bgimg-6 {
   background-image: url("../images/background_6.jpg");
-  min-height: 500px;
+  min-height: 200px;
 }
 
 .bgimg > a:first-child {
@@ -155,33 +158,79 @@ section li {
 .bgimg > h1 {
   text-decoration: none;
   opacity: initial;
-  font-size: 4em;
+  font-size: 1.2em;
   text-transform: uppercase;
   position: absolute;
   left: 0;
   top: 50%;
+  transform: translate(0%, -50%);
   width: 100%;
   text-align: center;
   color: white;
-  letter-spacing: 20px;
+  letter-spacing: 5px;
 }
 
 .bgimg > h2 {
   text-decoration: none;
   opacity: initial;
-  font-size: 2.4em;
+  font-size: 1em;
   text-transform: uppercase;
   position: absolute;
   left: 0;
   top: 50%;
+  transform: translate(0%, -50%);
   width: 100%;
   text-align: center;
   color: white;
-  letter-spacing: 20px;
+  letter-spacing: 5px;
+}
+
+@media (min-width: 300px) {
+  .bgimg > h1 {
+    font-size: 1.5em;
+    letter-spacing: 10px;
+  }
+  .bgimg > h2 {
+    font-size: 1.3em;
+    letter-spacing: 10px;
+  }
+}
+@media (min-width: 600px) {
+  .bgimg-1 {
+    min-height: 100%;
+  }
+  .bgimg-2 {
+    min-height: 500px;
+  }
+  .bgimg-3 {
+    min-height: 500px;
+  }
+  .bgimg-4 {
+    min-height: 500px;
+  }
+  .bgimg-5 {
+    min-height: 500px;
+  }
+  .bgimg-6 {
+    min-height: 500px;
+  }
+  .bgimg > h1 {
+    font-size: 3.5em;
+    letter-spacing: 20px;
+  }
+  .bgimg > h2 {
+    font-size: 2.4em;
+    letter-spacing: 20px;
+  }
+  .bgimg ~ section,
+  main section:first-child {
+    font-size: 1.2em;
+    padding: 60px 80px;
+  }
 }
 
 .podest {
-  padding: 3em;
+  margin: 30px 0px;
   display: grid;
   gap: 0.5em;
   grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
