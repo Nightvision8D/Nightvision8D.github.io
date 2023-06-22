@@ -1,6 +1,5 @@
 .header {
-  position: fixed;
-  top: -100px;
+  position: absolute; 
   width: 100%;
   transition: top 0.4s;
   background: linear-gradient(45deg, rgb(14, 14, 14) 0%, rgb(29, 29, 29) 100%);
