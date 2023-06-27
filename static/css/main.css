@@ -180,12 +180,16 @@ section li {
   letter-spacing: 20px;
 }
 
+.podest *:hover {
+  opacity: 0.6;
+}
+
 .podest {
   padding: 3em;
   display: grid;
   gap: 0.5em;
   grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
-  grid-template-rows: 2em 2em 4em;
+  grid-template-rows: 3.5em 3.5em 6em;
 }
 
 .podest * {
@@ -193,6 +197,14 @@ section li {
   text-align: center;
   border-radius: 3px 3px 0 0;
   font-size: 1.2em;
+  display: grid;
+  justify-items: center;
+}
+
+.podest img {
+  padding-top: 10px;
+  width: 60px;
+  height: 60px;
 }
 
 erster {
