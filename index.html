@@ -2,15 +2,18 @@
 <html lang="de">
   <head>
     <title>Tischtennis Tunier</title>
+
     <link rel="stylesheet" href="static/css/main.css" />
     <link rel="stylesheet" href="static/css/index.css" />
     <link rel="stylesheet" href="static/css/nav2.css" />
+
     <script src="static/js/main.js"></script>
+    <script src="static/js/nav.js"></script>
 
     <link rel="icon" href="static/images/favicon.png" />
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width initial-scale=1" />
-    <script src="static/js/nav.js"></script>
   </head>
   <body>
     <div class="bgimg bgimg-1">
@@ -47,17 +50,28 @@
             <a href="matches/match_2028.html">Turnier 2028</a>
           </div>
         </li>
+        <li>
+          <a class="link" href="winner.html"
+            ><img src="static/images/icons/medaille.png" /> Sieger</a
+          >
+        </li>
       </ul>
     </div>
 
     <main>
       <section id="start">
         <h2>Herzlich Willkommen!</h2>
-        <p>
-          Herzlich Willkommen auf der Website für das diesjährige Tischtennis
-          Tunier des <abbr>SCBB</abbr> (SC Bikini Bottom). Hier klären wir alles
-          nötige für einen reibungslosen Start in das Tunier!
-        </p>
+        Herzlich Willkommen auf der Website für das diesjährige Tischtennis
+        Tunier des
+        <span class="bikini" style="text-decoration: underline" id="bikini"
+          ><abbr>SCBB</abbr> (SC Bikini Bottom)</span
+        >
+        <div class="modal" id="bikini_modal">
+          <img src="static/images/spongebob-stickers.gif" />
+          <h2>Ai Ai Captain!</h2>
+        </div>
+        Hier klären wir alles nötige für einen reibungslosen Start in das
+        Tunier!
         <p>
           Erstmal danke für dein Interesse. Damit du alles weißt schau dir bitte
           auf jeden Fall alles auf dieser Website an!
@@ -107,37 +121,44 @@
           <tbody>
             <tr>
               <td>Gerhardt</td>
-              <td rowspan="2">Gerhardt</td>
-              <td rowspan="4">Gerhardt</td>
-              <td rowspan="8">Marcel</td>
+              <td rowspan="2"></td>
+              <td rowspan="4">
+                Hier könnte dein<br />
+                Name stehen
+              </td>
+              <td rowspan="8">Gewinner steht <br />noch nicht fest</td>
             </tr>
             <tr>
               <td>Sigrun</td>
             </tr>
             <tr>
               <td>Rike</td>
-              <td rowspan="2">Linda</td>
+              <td rowspan="2"></td>
             </tr>
             <tr>
-              <td>Linda</td>
+              <td></td>
             </tr>
             <tr>
-              <td>Isabelle</td>
-              <td rowspan="2">Isabelle</td>
-              <td rowspan="4">Marcel</td>
+              <td></td>
+              <td rowspan="2">
+                Hier könnte dein<br />
+                Name stehen
+              </td>
+              <td rowspan="4"></td>
             </tr>
             <tr>
-              <td>Ilona</td>
+              <td></td>
             </tr>
             <tr>
-              <td>Marcel</td>
-              <td rowspan="2">Marcel</td>
+              <td></td>
+              <td rowspan="2"></td>
             </tr>
             <tr>
-              <td>Alexa</td>
+              <td></td>
             </tr>
           </tbody>
         </table>
+        <h2>Es sind noch 5 Plätze frei!!!</h2>
         <div class="buttons">
           <h2>Weitere Turniere</h2>
           <a class="button" href="smallmatch.html">4 SPIELER</a>
@@ -145,9 +166,16 @@
         </div>
         <div class="podest">
           <space></space>
-          <zweiter>Gerhardt</zweiter>
-          <erster>Marcel</erster>
-          <dritter>Isabelle</dritter>
+          <zweiter
+            >xx <img src="static/images/icons/silbermedaille.png"
+          /></zweiter>
+          <erster
+            >Hier könnte dein Name stehen
+            <img src="static/images/icons/goldmedaille.png"
+          /></erster>
+          <dritter
+            >xx <img src="static/images/icons/bronzemedaille.png"
+          /></dritter>
           <space></space>
         </div>
         <p>Wir wünschen allen Teilnehmenden viel Erfolg!</p>

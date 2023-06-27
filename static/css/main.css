@@ -65,10 +65,6 @@ table + p {
   background-color: #388e3c;
 }
 
-img + h1 {
-  display: inline-block;
-}
-
 .bgimg {
   position: relative;
   width: 100%;
@@ -136,6 +132,11 @@ main section:first-child {
   min-height: 200px;
 }
 
+.bgimg-7 {
+  background-image: url("../images/background_winner.jpg");
+  min-height: 500px;
+}
+
 .bgimg > a:first-child {
   text-decoration: none;
   opacity: initial;
@@ -145,14 +146,6 @@ main section:first-child {
   bottom: 5px;
   text-align: right;
   color: rgb(158, 158, 158);
-}
-
-section ul {
-  list-style-type: circle;
-}
-
-section li {
-  margin: 10px 0;
 }
 
 .bgimg > h1 {
@@ -229,12 +222,28 @@ section li {
   }
 }
 
+img + h1 {
+  display: inline-block;
+}
+
+section ul {
+  list-style-type: circle;
+}
+
+section li {
+  margin: 10px 0;
+}
+
+.podest *:hover {
+  opacity: 0.6;
+}
+
 .podest {
   margin: 30px 0px;
   display: grid;
   gap: 0.5em;
   grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
-  grid-template-rows: 2em 2em 4em;
+  grid-template-rows: 3.5em 3.5em 6em;
 }
 
 .podest * {
@@ -242,6 +251,14 @@ section li {
   text-align: center;
   border-radius: 3px 3px 0 0;
   font-size: 1.2em;
+  display: grid;
+  justify-items: center;
+}
+
+.podest img {
+  padding-top: 10px;
+  width: 60px;
+  height: 60px;
 }
 
 erster {
@@ -261,6 +278,7 @@ dritter {
   background-color: #cb8e00;
   border: 1px solid;
 }
+
 space {
   grid-row: 1/-1;
 }

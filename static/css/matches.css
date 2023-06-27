@@ -16,6 +16,15 @@
   margin-top: 150px;
 }
 
+h3 > img {
+  width: 30px;
+  height: 30px;
+}
+
+h3 {
+  display: inline-flex;
+}
+
 @media (min-width: 620px) {
   .header + section {
     margin-top: 80px;
