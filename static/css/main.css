@@ -133,6 +133,11 @@ main section:first-child {
   min-height: 500px;
 }
 
+.bgimg-7 {
+  background-image: url("../images/background_winner.jpg");
+  min-height: 500px;
+}
+
 .bgimg > a:first-child {
   text-decoration: none;
   opacity: initial;

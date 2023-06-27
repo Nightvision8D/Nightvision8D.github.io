@@ -2,12 +2,13 @@ window.addEventListener("load", function () {
   let current = window.location.pathname;
   let links = this.document.getElementsByClassName("link");
   console.log(current);
+
   for (var i = 0; i < links.length; i++) {
     var link = links.item(i);
     if (link.classList.contains("underline")) {
       link.classList.remove("underline");
     }
-    if (link.getAttribute("href") == current) {
+    if (link.getAttribute("href") == current.replace("/", "")) {
       link.classList.add("underline");
     }
   }

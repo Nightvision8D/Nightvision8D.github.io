@@ -93,6 +93,25 @@ section h2 {
   box-sizing: border-box;
 }
 
+.modal {
+  position: fixed;
+  background-color: #42a5f5;
+  top: 50%;
+  left: 50%;
+  padding: 10px 10px;
+  z-index: 5000;
+  border-radius: 20px;
+  display: none;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  transform: translate(-50%, -50%);
+}
+
+#bikini:hover ~ .modal {
+  display: block !important;
+}
+
 @keyframes sdb10 {
   0% {
     transform: translate(0, 0);
