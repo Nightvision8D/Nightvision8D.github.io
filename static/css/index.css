@@ -37,6 +37,10 @@ section h2 {
   width: 100%;
 }
 
+#start {
+  margin-top: 8em;
+}
+
 .bgimg-1 a.scroll {
   position: absolute;
   bottom: 20px;
@@ -50,19 +54,6 @@ section h2 {
   text-decoration: none;
   letter-spacing: 0.1em;
   transition: opacity 0.3s;
-}
-
-#start {
-  margin-top: 8em;
-}
-
-@media (min-width: 620px) {
-  .buttons {
-    grid-auto-flow: column;
-  }
-  #start {
-    margin-top: 3em;
-  }
 }
 
 .bgimg-1 a.scroll:hover {
@@ -126,5 +117,14 @@ section h2 {
   }
   100% {
     opacity: 0;
+  }
+}
+
+@media (min-width: 620px) {
+  .buttons {
+    grid-auto-flow: column;
+  }
+  #start {
+    margin-top: 3em;
   }
 }

@@ -65,10 +65,6 @@ table + p {
   background-color: #388e3c;
 }
 
-img + h1 {
-  display: inline-block;
-}
-
 .bgimg {
   position: relative;
   width: 100%;
@@ -149,14 +145,6 @@ main section:first-child {
   color: rgb(158, 158, 158);
 }
 
-section ul {
-  list-style-type: circle;
-}
-
-section li {
-  margin: 10px 0;
-}
-
 .bgimg > h1 {
   text-decoration: none;
   opacity: initial;
@@ -183,6 +171,18 @@ section li {
   text-align: center;
   color: white;
   letter-spacing: 20px;
+}
+
+img + h1 {
+  display: inline-block;
+}
+
+section ul {
+  list-style-type: circle;
+}
+
+section li {
+  margin: 10px 0;
 }
 
 .podest *:hover {
@@ -229,6 +229,7 @@ dritter {
   background-color: #cb8e00;
   border: 1px solid;
 }
+
 space {
   grid-row: 1/-1;
 }
