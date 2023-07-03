@@ -142,6 +142,9 @@ iframe {
   iframe {
     display: block;
   }
+  #position {
+    display: grid;
+  }
   #position > audio {
     width: 100%;
   }
