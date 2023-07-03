@@ -9,6 +9,7 @@
 
     <script src="static/js/main.js"></script>
     <script src="static/js/nav.js"></script>
+    <script src="static/js/winner.js"></script>
 
     <link rel="icon" href="static/images/favicon.png" />
 
@@ -16,7 +17,7 @@
     <meta name="viewport" content="width=device-width initial-scale=1" />
   </head>
   <body>
-    <div class="bgimg bgimg-1">
+    <div class="bgimg bgimg-1 bgimg-header">
       <a href="#fn01" id="fnref01">[1]</a>
       <h1>Tischtennis Tunier</h1>
       <a href="#start" class="scroll"><span></span>Scroll</a>
@@ -25,14 +26,10 @@
     <div class="header">
       <ul>
         <li>
-          <a class="link" href="index.html"
-            ><img src="static/images/icons/home.png" /> Home</a
-          >
+          <a class="link" href="index.html"><img src="static/images/icons/home.png" /> Home</a>
         </li>
         <li class="dropdown">
-          <a class="dropbtn link"
-            ><img src="static/images/icons/tabletennis.png" /> Turniere</a
-          >
+          <a class="dropbtn link"><img src="static/images/icons/tabletennis.png" /> Turniere</a>
           <div class="dropdown-content">
             <a href="smallmatch.html">4-Spieler Turnier</a>
             <a href="#match">8-Spieler Turnier</a>
@@ -40,9 +37,7 @@
           </div>
         </li>
         <li class="dropdown">
-          <a class="link dropbtn"
-            ><img src="static/images/icons/clock.png" /> Vergangene Turniere</a
-          >
+          <a class="link dropbtn"><img src="static/images/icons/clock.png" /> Vergangene Turniere</a>
           <div class="dropdown-content">
             <a href="matches/match_2031.html">Turnier 2031</a>
             <a href="matches/match_2030.html">Turnier 2030</a>
@@ -51,9 +46,7 @@
           </div>
         </li>
         <li>
-          <a class="link" href="winner.html"
-            ><img src="static/images/icons/medaille.png" /> Sieger</a
-          >
+          <a class="link" href="winner.html"><img src="static/images/icons/medaille.png" /> Sieger</a>
         </li>
       </ul>
     </div>
@@ -61,31 +54,21 @@
     <main>
       <section id="start">
         <h2>Herzlich Willkommen!</h2>
-        Herzlich Willkommen auf der Website für das diesjährige Tischtennis
-        Tunier des
-        <span class="bikini" style="text-decoration: underline" id="bikini"
-          ><abbr>SCBB</abbr> (SC Bikini Bottom)</span
-        >
+        Herzlich Willkommen auf der Website für das diesjährige Tischtennis Tunier des
+        <span class="bikini" style="text-decoration: underline" id="bikini"><abbr>SCBB</abbr> (SC Bikini Bottom)</span>
         <div class="modal" id="bikini_modal">
           <img src="static/images/spongebob-stickers.gif" />
           <h2>Ai Ai Captain!</h2>
         </div>
-        Hier klären wir alles nötige für einen reibungslosen Start in das
-        Tunier!
-        <p>
-          Erstmal danke für dein Interesse. Damit du alles weißt schau dir bitte
-          auf jeden Fall alles auf dieser Website an!
-        </p>
+        Hier klären wir alles nötige für einen reibungslosen Start in das Tunier!
+        <p>Erstmal danke für dein Interesse. Damit du alles weißt schau dir bitte auf jeden Fall alles auf dieser Website an!</p>
       </section>
       <div class="bgimg bgimg-2">
         <a href="#fn02" id="fnref02">[2]</a>
         <h2>Was ist mitzubringen?</h2>
       </div>
       <section>
-        <p>
-          Damit du das Tunier voll und ganz genießen kannst musst du unbedingt
-          darauf achten folgende Dinge dabei zu haben:
-        </p>
+        <p>Damit du das Tunier voll und ganz genießen kannst musst du unbedingt darauf achten folgende Dinge dabei zu haben:</p>
         <ul>
           <li><abbr>TT</abbr> (Tischtennis) Schläger</li>
           <li>Hallenschuhe</li>
@@ -105,10 +88,7 @@
           <li>Bei der Tunierleitung melden</li>
           <li>Sich in den Tunierplan eintragen lassen</li>
         </ol>
-        <p>
-          Nach diesen 3 Schritten bist du schon registriert und kannst bei
-          unserem Tunier mitspielen.
-        </p>
+        <p>Nach diesen 3 Schritten bist du schon registriert und kannst bei unserem Tunier mitspielen.</p>
       </section>
       <div class="bgimg bgimg-4">
         <a href="#fn04" id="fnref04">[4]</a>
@@ -117,48 +97,66 @@
       <section id="match">
         <h2>Turnier mit 8 Spielern</h2>
         <time datetime="2032-08-23T08:00:00">23.08.2032 08:00</time>
+        <button class="button" type="button" style="display: block; margin-right: 0px; margin-left: auto" id="save_button">SPEICHERN</button>
         <table>
           <tbody>
             <tr>
-              <td>Gerhardt</td>
-              <td rowspan="2"></td>
-              <td rowspan="4">
-                Hier könnte dein<br />
-                Name stehen
+              <td>
+                <span>Gerhardt</span>
+                <input type="number" placeholder="0" id="0_1" class="ergebnis" />
               </td>
-              <td rowspan="8">Gewinner steht <br />noch nicht fest</td>
+              <td rowspan="2" id="insert_1_1"></td>
+              <td rowspan="4" id="insert_2_1"></td>
+              <td rowspan="8" id="insert_3_1"></td>
             </tr>
             <tr>
-              <td>Sigrun</td>
-            </tr>
-            <tr>
-              <td>Rike</td>
-              <td rowspan="2"></td>
-            </tr>
-            <tr>
-              <td></td>
-            </tr>
-            <tr>
-              <td></td>
-              <td rowspan="2">
-                Hier könnte dein<br />
-                Name stehen
+              <td>
+                <span>Sigrun</span>
+                <input type="number" placeholder="0" id="0_2" class="ergebnis" />
               </td>
-              <td rowspan="4"></td>
             </tr>
             <tr>
-              <td></td>
+              <td>
+                <span>Rike</span>
+                <input type="number" placeholder="0" id="0_3" class="ergebnis" />
+              </td>
+              <td rowspan="2" id="insert_1_2"></td>
             </tr>
             <tr>
-              <td></td>
-              <td rowspan="2"></td>
+              <td>
+                <span>Daniel</span>
+                <input type="number" placeholder="0" id="0_4" class="ergebnis" />
+              </td>
             </tr>
             <tr>
-              <td></td>
+              <td>
+                <span>Peter</span>
+                <input type="number" placeholder="0" id="0_5" class="ergebnis" />
+              </td>
+              <td rowspan="2" id="insert_1_3"></td>
+              <td rowspan="4" id="insert_2_2"></td>
+            </tr>
+            <tr>
+              <td>
+                <span>Manfred</span>
+                <input type="number" placeholder="0" id="0_6" class="ergebnis" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span>Sabine</span>
+                <input type="number" placeholder="0" id="0_7" class="ergebnis" />
+              </td>
+              <td rowspan="2" id="insert_1_4"></td>
+            </tr>
+            <tr>
+              <td>
+                <span>Gutrun</span>
+                <input type="number" placeholder="0" id="0_8" class="ergebnis" />
+              </td>
             </tr>
           </tbody>
         </table>
-        <h2>Es sind noch 5 Plätze frei!!!</h2>
         <div class="buttons">
           <h2>Weitere Turniere</h2>
           <a class="button" href="smallmatch.html">4 SPIELER</a>
@@ -166,16 +164,9 @@
         </div>
         <div class="podest">
           <space></space>
-          <zweiter
-            >xx <img src="static/images/icons/silbermedaille.png"
-          /></zweiter>
-          <erster
-            >Hier könnte dein Name stehen
-            <img src="static/images/icons/goldmedaille.png"
-          /></erster>
-          <dritter
-            >xx <img src="static/images/icons/bronzemedaille.png"
-          /></dritter>
+          <zweiter id="step_zweiter"><span>xx</span> <img src="static/images/icons/silbermedaille.png" /></zweiter>
+          <erster id="step_erster"><span>Hier könnte dein Name stehen</span> <img src="static/images/icons/goldmedaille.png" /></erster>
+          <dritter id="step_dritter"><span>xx</span> <img src="static/images/icons/bronzemedaille.png" /></dritter>
           <space></space>
         </div>
         <p>Wir wünschen allen Teilnehmenden viel Erfolg!</p>
@@ -209,33 +200,19 @@
             <a href="https://tv-dellbrueck.de/tischtennis/">Bildquelle</a>
           </li>
           <li id="fn02" role="doc-footnote">
-            <a
-              href="https://tt-shop-jesumann.de/media/31/24/1a/1660552230/TT-Banner-Tischtennis.jpg"
-              >Bildquelle</a
-            >
+            <a href="https://tt-shop-jesumann.de/media/31/24/1a/1660552230/TT-Banner-Tischtennis.jpg">Bildquelle</a>
           </li>
           <li id="fn03" role="doc-footnote">
-            <a href="https://www.bra.nrw.de/bildung-schule/pruefungen"
-              >Bildquelle</a
-            >
+            <a href="https://www.bra.nrw.de/bildung-schule/pruefungen">Bildquelle</a>
           </li>
           <li id="fn04" role="doc-footnote">
-            <a
-              href="https://www.rundblick-niedersachsen.de/kleiner-ball-grosser-sport/"
-              >Bildquelle</a
-            >
+            <a href="https://www.rundblick-niedersachsen.de/kleiner-ball-grosser-sport/">Bildquelle</a>
           </li>
           <li id="fn05" role="doc-footnote">
-            <a
-              href="https://as2.ftcdn.net/v2/jpg/03/15/12/21/1000_F_315122151_YLRvOsGUpbGvjUnwXA7r4rxVEk9HIamh.jpg"
-              >Bildquelle</a
-            >
+            <a href="https://as2.ftcdn.net/v2/jpg/03/15/12/21/1000_F_315122151_YLRvOsGUpbGvjUnwXA7r4rxVEk9HIamh.jpg">Bildquelle</a>
           </li>
           <li id="fn06" role="doc-footnote">
-            <a
-              href="https://www.one.de/images/infocenter/rechtliches/rechtliches-info.jpg"
-              >Bildquelle</a
-            >
+            <a href="https://www.one.de/images/infocenter/rechtliches/rechtliches-info.jpg">Bildquelle</a>
           </li>
         </ol>
         <h2>Impressum</h2>

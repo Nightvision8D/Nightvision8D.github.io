@@ -23,7 +23,6 @@ section h2 {
 }
 
 #position {
-  display: grid;
   gap: 20px;
   justify-content: center;
 }
@@ -84,36 +83,10 @@ iframe {
   display: none;
 }
 
-audio {
-  width: 100px;
+.modal > img {
+  width: 50px;
 }
 
-@media (min-width: 300px) {
-  audio {
-    width: 300px;
-  }
-}
-
-@media (min-width: 600px) {
-  .bgimg-1 a.scroll {
-    display: block !important;
-  }
-  iframe {
-    display: block;
-  }
-  #position > audio {
-    width: 100%;
-  }
-}
-
-@media (min-width: 620px) {
-  .buttons {
-    grid-auto-flow: column;
-  }
-  #start {
-    margin-top: 3em;
-  }
-  
 .modal {
   position: fixed;
   background-color: #42a5f5;
@@ -131,7 +104,6 @@ audio {
 
 #bikini:hover ~ .modal {
   display: block !important;
-
 }
 
 @keyframes sdb10 {
@@ -148,6 +120,33 @@ audio {
   }
   100% {
     opacity: 0;
+  }
+}
+
+@media (min-width: 300px) {
+  audio {
+    width: 300px;
+  }
+  .modal > img {
+    width: 150px;
+  }
+}
+
+@media (min-width: 600px) {
+  .modal > img {
+    width: 300px;
+  }
+  .bgimg-1 a.scroll {
+    display: block !important;
+  }
+  iframe {
+    display: block;
+  }
+  #position {
+    display: grid;
+  }
+  #position > audio {
+    width: 100%;
   }
 }
 
