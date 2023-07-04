@@ -1,6 +1,8 @@
+// await document load
 document.addEventListener("DOMContentLoaded", function () {
+  // get save button
   var button = document.getElementById("save_button");
-
+  // if button is clicked
   button.addEventListener("click", function () {
     var inputList = document.getElementsByClassName("ergebnis");
     for (let i = 0; i < inputList.length; i++) {

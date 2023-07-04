@@ -9,10 +9,14 @@ window.addEventListener("scroll", function () {
 
 // add toggle music if user is hovered over SC Bikini Bottom text
 document.addEventListener("DOMContentLoaded", function () {
+  var userClicked = false;
+  document.addEventListener("click", function () {
+    userClicked = true;
+  });
   var el = document.getElementById("bikini");
   el.addEventListener("mouseenter", function () {
     try {
-      document.getElementById("spongebob_music").play();
+      if (userClicked) document.getElementById("spongebob_music").play();
     } catch (err) {}
   });
   el.addEventListener("mouseleave", function () {
