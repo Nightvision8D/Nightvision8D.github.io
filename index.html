@@ -98,7 +98,7 @@
         <h2>Turnier mit 8 Spielern</h2>
         <time datetime="2032-08-23T08:00:00">23.08.2032 08:00</time>
         <button class="button" type="button" style="display: block; margin-right: 0px; margin-left: auto" id="save_button">SPEICHERN</button>
-        <table>
+        <table class="resulttable">
           <tbody>
             <tr>
               <td>
@@ -162,7 +162,7 @@
           <a class="button" href="smallmatch.html">4 SPIELER</a>
           <a class="button" href="bigmatch.html">16 SPIELER</a>
         </div>
-        <div class="podest">
+        <div class="podest" style="display: none" id="podest">
           <space></space>
           <zweiter id="step_zweiter"><span>xx</span> <img src="static/images/icons/silbermedaille.png" /></zweiter>
           <erster id="step_erster"><span>Hier könnte dein Name stehen</span> <img src="static/images/icons/goldmedaille.png" /></erster>
@@ -185,7 +185,7 @@
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
-        <audio controls>
+        <audio controls id="spongebob_music">
           <source src="static/music/playback.mp3" type="audio/mpeg" />
         </audio>
       </section>

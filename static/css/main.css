@@ -1,3 +1,6 @@
+/* CSS File of every site */
+
+/* Global settings */
 * {
   font-family: "Poppins", sans-serif;
 }
@@ -12,15 +15,14 @@ body {
   height: 100%;
 }
 
+/* Table css settings */
 section table {
   margin: 20px 0px;
   border-collapse: collapse;
 }
-
 table + a {
   margin-top: 40px !important;
 }
-
 table {
   position: relative;
   left: 50%;
@@ -28,7 +30,6 @@ table {
   min-width: 80%;
   max-width: 100%;
 }
-
 th,
 td {
   border: 1px solid black;
@@ -42,7 +43,6 @@ td {
 tr {
   min-height: 100px;
 }
-
 table + p {
   width: 100%;
   text-align: center;
@@ -50,6 +50,7 @@ table + p {
   margin-top: 25px;
 }
 
+/* Button style */
 .button {
   display: block;
   width: fit-content;
@@ -64,11 +65,11 @@ table + p {
   cursor: pointer;
   font-size: 18px;
 }
-
 .button:hover {
   background-color: #388e3c;
 }
 
+/* Paralax scroll settings */
 .bgimg {
   position: relative;
   width: 100%;
@@ -77,7 +78,7 @@ table + p {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+/* Add dark layer with low opacity on images */
 .bgimg::before {
   content: "";
   position: absolute;
@@ -87,7 +88,7 @@ table + p {
   left: 0px;
   background-color: rgba(0, 0, 0, 0.5);
 }
-
+/* Settings for section after images */
 .bgimg + section h2 {
   text-transform: uppercase;
   width: 100%;
@@ -97,7 +98,6 @@ table + p {
   background-color: rgb(255, 255, 255);
   padding: 10px 10px;
 }
-
 main section:first-child {
   color: rgb(80, 80, 80);
   background-color: rgb(255, 255, 255);
@@ -106,41 +106,37 @@ main section:first-child {
   padding-top: 120px;
 }
 
+/* Images */
 .bgimg-1 {
   background-image: url("../images/background_1.jpg");
   min-height: 200px;
 }
-
 .bgimg-2 {
   background-image: url("../images/background_2.jpg");
   min-height: 200px;
 }
-
 .bgimg-3 {
   background-image: url("../images/background_3.jpg");
   min-height: 200px;
 }
-
 .bgimg-4 {
   background-image: url("../images/background_4.jpg");
   min-height: 200px;
 }
-
 .bgimg-5 {
   background-image: url("../images/background_5.png");
   min-height: 200px;
 }
-
 .bgimg-6 {
   background-image: url("../images/background_6.jpg");
   min-height: 200px;
 }
-
 .bgimg-7 {
   background-image: url("../images/background_winner.jpg");
   min-height: 500px;
 }
 
+/* Scroll element on images */
 .bgimg > a:first-child {
   text-decoration: none;
   opacity: initial;
@@ -152,6 +148,7 @@ main section:first-child {
   color: rgb(158, 158, 158);
 }
 
+/* Text on images */
 .bgimg > h1 {
   text-decoration: none;
   opacity: initial;
@@ -166,7 +163,6 @@ main section:first-child {
   color: white;
   letter-spacing: 5px;
 }
-
 .bgimg > h2 {
   text-decoration: none;
   opacity: initial;
@@ -181,7 +177,6 @@ main section:first-child {
   color: white;
   letter-spacing: 5px;
 }
-
 img + h1 {
   display: inline-block;
 }
@@ -198,10 +193,12 @@ section li {
   margin: 10px 0;
 }
 
+/* Add opacity if podest element is hovered */
 .podest *:hover {
   opacity: 0.6;
 }
 
+/* Podest element css settings */
 .podest {
   margin: 30px 0px;
   display: grid;
@@ -209,7 +206,6 @@ section li {
   grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
   grid-template-rows: 3.5em 3.5em 8em;
 }
-
 .podest * {
   padding-top: 0.5em;
   text-align: center;
@@ -218,35 +214,32 @@ section li {
   display: grid;
   justify-items: center;
 }
-
 .podest img {
   padding-top: 10px;
   width: 40px;
   height: 40px;
 }
-
+/* Podest elements */
 erster {
   grid-row: 1/-1;
   background-color: gold;
   border: 1px solid;
 }
-
 zweiter {
   grid-row: 2/-1;
   background-color: silver;
   border: 1px solid;
 }
-
 dritter {
   grid-row: 3/-1;
   background-color: #cb8e00;
   border: 1px solid;
 }
-
 space {
   grid-row: 1/-1;
 }
 
+/* Inputs */
 input[type="number"] {
   color: #333;
   box-sizing: content-box;
@@ -256,11 +249,11 @@ input[type="number"] {
   border-radius: 7px;
   text-align: center;
 }
-
 input[type="number"]:focus {
   border: 2px solid #1b5e20;
 }
 
+/* Adjustements if screen width is min 300px */
 @media (min-width: 300px) {
   .podest img {
     width: 50px;
@@ -275,11 +268,13 @@ input[type="number"]:focus {
     letter-spacing: 10px;
   }
 }
+/* Adjustements if screen width is min 600px */
 @media (min-width: 600px) {
   .podest img {
     width: 60px;
     height: 60px;
   }
+  /* Change images to full width if screen is width enough */
   .bgimg-1 {
     min-height: 100%;
   }
@@ -298,6 +293,7 @@ input[type="number"]:focus {
   .bgimg-6 {
     min-height: 500px;
   }
+  /* Bigger texts on images */
   .bgimg > h1 {
     font-size: 3.5em;
     letter-spacing: 20px;

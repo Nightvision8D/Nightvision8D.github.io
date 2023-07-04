@@ -1,3 +1,6 @@
+/* CSS file for nav list */
+
+/* General css settings to nav */
 .header {
   position: absolute;
   width: 100%;
@@ -6,19 +9,11 @@
   z-index: 999;
   box-shadow: 0px 10px 5px rgba(20, 20, 20, 0.3);
 }
-
 .header > ul {
   display: flex;
   justify-content: flex-start;
   flex-direction: column;
 }
-
-@media (min-width: 620px) {
-  .header > ul {
-    flex-direction: row;
-  }
-}
-
 .header ul {
   list-style-type: none;
   margin: 1;
@@ -28,14 +23,13 @@
   display: inline;
   font-size: 1.3em;
   margin: 5px 15px;
-  /*border-right: 1px solid #bbb; */
 }
-
+/* If header has class sticky change position to fixed */
 .header.sticky {
   position: fixed !important;
   top: 0;
 }
-
+/* Settings to links in nav list */
 .header a {
   padding: 8px;
   color: white;
@@ -43,11 +37,11 @@
   display: inline-block;
   vertical-align: middle;
 }
-
+/* If links are hovered */
 .header a:hover {
   text-decoration: underline;
 }
-
+/* Add underline to element if underline class is present */
 .underline {
   text-decoration: underline;
   font-weight: bold;
@@ -57,12 +51,12 @@ a > img {
   vertical-align: text-bottom;
   height: 24px;
 }
-
+/* Dropdown element */
 .dropdown {
   position: relative;
   display: inline-block;
 }
-
+/* Dropwdown keyframes for animation */
 @keyframes rotateMenu {
   0% {
     transform: rotateX(-90deg);
@@ -74,7 +68,7 @@ a > img {
     transform: rotateX(0deg);
   }
 }
-
+/* CSS class for dropdown content */
 .dropdown-content {
   animation: rotateMenu 400ms ease-in-out forwards;
   perspective: 1000px;
@@ -87,23 +81,30 @@ a > img {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
-
+/* Links in dropdown */
 .dropdown-content a {
   color: white;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
-
+/* Hovered links in dropdown */
 .dropdown-content a:hover {
   text-decoration: underline;
 }
-
+/* If dropdown link in nav is hovered or active show dropwndown content  */
 .dropdown:has(:hover, :active) .dropdown-content {
   display: block;
 }
-
+/* if dropdown link in nav is hovered change cursor to pointer and add underline */
 .dropdown:hover .dropbtn {
   cursor: pointer;
   text-decoration: underline;
+}
+
+/* Nav list to row if screen width is min 620px */
+@media (min-width: 620px) {
+  .header > ul {
+    flex-direction: row;
+  }
 }

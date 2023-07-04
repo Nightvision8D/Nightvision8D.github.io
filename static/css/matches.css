@@ -1,3 +1,6 @@
+/* CSS file for past match sites */
+
+/* Table */
 .info {
   display: none;
   margin-left: 50px;
@@ -13,6 +16,7 @@
 .info tr > td:first-child {
   font-weight: bold;
 }
+
 .header + section {
   margin-top: 150px;
 }
@@ -26,15 +30,19 @@ h3 {
   display: inline-flex;
 }
 
+/* Adjustements if screen width is min 600px */
 @media (min-width: 600px) {
+  /* Show big table */
   .info {
     display: block;
   }
+  /* Hide little table */
   .info-list {
     display: none;
   }
 }
 
+/* Adjustements if screen width is min 620px */
 @media (min-width: 620px) {
   .header + section {
     margin-top: 80px;

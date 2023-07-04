@@ -37,6 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function checkStepUpdates(row, element) {
   if (row == 3) {
+    document.getElementById("podest").removeAttribute("style");
     document.getElementById("step_erster").firstElementChild.innerHTML = element.firstElementChild.innerHTML;
 
     let secondRow = new Array(document.getElementById("2_1"), document.getElementById("2_2"));
