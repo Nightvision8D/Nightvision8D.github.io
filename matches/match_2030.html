@@ -24,10 +24,10 @@
       <!--Navlist-->
       <ul>
         <li>
-          <a class="link" href="../index.html"><img src="../static/images/icons/home.png" /> Home</a>
+          <a class="link" href="../index.html"><img src="../static/images/icons/home.png" alt="Home icon" /> Home</a>
         </li>
         <li class="dropdown">
-          <a class="dropbtn link"><img src="../static/images/icons/tabletennis.png" /> Turniere</a>
+          <a class="dropbtn link"><img src="../static/images/icons/tabletennis.png" alt="Table tennis icon" /> Turniere</a>
           <div class="dropdown-content">
             <a href="../smallmatch.html">4-Spieler Turnier</a>
             <a href="../index.html#match">8-Spieler Turnier</a>
@@ -35,7 +35,7 @@
           </div>
         </li>
         <li class="dropdown">
-          <a class="link dropbtn"><img src="../static/images/icons/clock.png" /> Vergangene Turniere</a>
+          <a class="link dropbtn"><img src="../static/images/icons/clock.png" alt="Clock icon" /> Vergangene Turniere</a>
           <div class="dropdown-content">
             <a href="match_2031.html">Turnier 2031</a>
             <a href="match_2030.html">Turnier 2030</a>
@@ -44,7 +44,7 @@
           </div>
         </li>
         <li>
-          <a class="link" href="../winner.html"><img src="../static/images/icons/medaille.png" /> Sieger</a>
+          <a class="link" href="../winner.html"><img src="../static/images/icons/medaille.png" alt="Medaille" /> Sieger</a>
         </li>
       </ul>
     </nav>
@@ -123,12 +123,12 @@
     <hr />
     <section>
       <h2>Siegertreppe</h2>
-      <div class="podest">
-        <space></space>
-        <zweiter>Gretel <img src="../static/images/icons/silbermedaille.png" /></zweiter>
-        <erster>Brunhild <img src="../static/images/icons/goldmedaille.png" /></erster>
-        <dritter>Maxi <img src="../static/images/icons/bronzemedaille.png" /></dritter>
-        <space></space>
+      <div class="podest" id="podest">
+        <div></div>
+        <div id="step_zweiter" class="zweiter"><span>xx</span> <img src="../static/images/icons/silbermedaille.png" alt="silbermedaille" /></div>
+        <div class="erster" id="step_erster"><span>Hier könnte dein Name stehen</span> <img src="../static/images/icons/goldmedaille.png" alt="goldmedaille" /></div>
+        <div class="dritter" id="step_dritter"><span>xx</span> <img src="../static/images/icons/bronzemedaille.png" alt="bronzemedaille" /></div>
+        <div></div>
       </div>
       <h3 style="text-align: center">Herzlichen Glückwunsch an Brunhild zum Sieg des Turniers 2030!</h3>
     </section>
