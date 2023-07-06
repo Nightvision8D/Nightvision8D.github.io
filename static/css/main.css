@@ -4,10 +4,12 @@
 * {
   font-family: "Poppins", sans-serif;
 }
+
 html {
   scroll-behavior: smooth;
   height: 100%;
 }
+
 body {
   display: block;
   margin: 0;
@@ -20,9 +22,11 @@ section table {
   margin: 20px 0px;
   border-collapse: collapse;
 }
-table + a {
+
+table+a {
   margin-top: 40px !important;
 }
+
 table {
   position: relative;
   left: 50%;
@@ -30,24 +34,40 @@ table {
   min-width: 80%;
   max-width: 100%;
 }
+
 th,
 td {
   border: 1px solid black;
   min-width: 30%;
   height: 40px;
 }
+
 td {
   text-align: center;
   min-height: 100px;
 }
+
 tr {
   min-height: 100px;
 }
-table + p {
+
+table+p {
   width: 100%;
   text-align: center;
   font-weight: bold;
   margin-top: 25px;
+}
+
+.topbox {
+  border-width: 3px 3px 1px 3px;
+}
+
+.botbox {
+  border-width: 1px 3px 3px 3px;
+}
+
+.winner {
+  border-width: 3px;
 }
 
 /* Button style */
@@ -65,6 +85,7 @@ table + p {
   cursor: pointer;
   font-size: 18px;
 }
+
 .button:hover {
   background-color: #388e3c;
 }
@@ -78,6 +99,7 @@ table + p {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 /* Add dark layer with low opacity on images */
 .bgimg::before {
   content: "";
@@ -88,16 +110,19 @@ table + p {
   left: 0px;
   background-color: rgba(0, 0, 0, 0.5);
 }
+
 /* Settings for section after images */
-.bgimg + section h2 {
+.bgimg+section h2 {
   text-transform: uppercase;
   width: 100%;
 }
-.bgimg ~ section {
+
+.bgimg~section {
   color: rgb(80, 80, 80);
   background-color: rgb(255, 255, 255);
   padding: 10px 10px;
 }
+
 main section:first-child {
   color: rgb(80, 80, 80);
   background-color: rgb(255, 255, 255);
@@ -111,33 +136,39 @@ main section:first-child {
   background-image: url("../images/background_1.jpg");
   min-height: 200px;
 }
+
 .bgimg-2 {
   background-image: url("../images/background_2.jpg");
   min-height: 200px;
 }
+
 .bgimg-3 {
   background-image: url("../images/background_3.jpg");
   min-height: 200px;
 }
+
 .bgimg-4 {
   background-image: url("../images/background_4.jpg");
   min-height: 200px;
 }
+
 .bgimg-5 {
   background-image: url("../images/background_5.png");
   min-height: 200px;
 }
+
 .bgimg-6 {
   background-image: url("../images/background_6.jpg");
   min-height: 200px;
 }
+
 .bgimg-7 {
   background-image: url("../images/background_winner.jpg");
   min-height: 500px;
 }
 
 /* Scroll element on images */
-.bgimg > a:first-child {
+.bgimg>a:first-child {
   text-decoration: none;
   opacity: initial;
   font-size: 0.5em;
@@ -149,7 +180,7 @@ main section:first-child {
 }
 
 /* Text on images */
-.bgimg > h1 {
+.bgimg>h1 {
   text-decoration: none;
   opacity: initial;
   font-size: 1.2em;
@@ -163,7 +194,8 @@ main section:first-child {
   color: white;
   letter-spacing: 5px;
 }
-.bgimg > h2 {
+
+.bgimg>h2 {
   text-decoration: none;
   opacity: initial;
   font-size: 1em;
@@ -177,7 +209,8 @@ main section:first-child {
   color: white;
   letter-spacing: 5px;
 }
-img + h1 {
+
+img+h1 {
   display: inline-block;
 }
 
@@ -185,7 +218,7 @@ section ul {
   list-style-type: circle;
 }
 
-.header + section {
+.header+section {
   padding-top: 180px;
 }
 
@@ -206,6 +239,7 @@ section li {
   grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
   grid-template-rows: 3.5em 3.5em 8em;
 }
+
 .podest * {
   padding-top: 0.5em;
   text-align: center;
@@ -214,27 +248,32 @@ section li {
   display: grid;
   justify-items: center;
 }
+
 .podest img {
   padding-top: 10px;
   width: 40px;
   height: 40px;
 }
+
 /* Podest elements */
 div.podest .erster {
   grid-row: 1/-1;
   background-color: gold;
   border: 1px solid;
 }
+
 div.podest .zweiter {
   grid-row: 2/-1;
   background-color: silver;
   border: 1px solid;
 }
+
 div.podest .dritter {
   grid-row: 3/-1;
   background-color: #cb8e00;
   border: 1px solid;
 }
+
 div.podest div {
   grid-row: 1/-1;
 }
@@ -249,6 +288,7 @@ input[type="number"] {
   border-radius: 7px;
   text-align: center;
 }
+
 input[type="number"]:focus {
   border: 2px solid #1b5e20;
 }
@@ -259,50 +299,62 @@ input[type="number"]:focus {
     width: 50px;
     height: 50px;
   }
-  .bgimg > h1 {
+
+  .bgimg>h1 {
     font-size: 1.5em;
     letter-spacing: 10px;
   }
-  .bgimg > h2 {
+
+  .bgimg>h2 {
     font-size: 1.3em;
     letter-spacing: 10px;
   }
 }
+
 /* Adjustements if screen width is min 600px */
 @media (min-width: 600px) {
   .podest img {
     width: 60px;
     height: 60px;
   }
+
   /* Change images to full width if screen is width enough */
   .bgimg-1 {
     min-height: 100%;
   }
+
   .bgimg-2 {
     min-height: 500px;
   }
+
   .bgimg-3 {
     min-height: 500px;
   }
+
   .bgimg-4 {
     min-height: 500px;
   }
+
   .bgimg-5 {
     min-height: 500px;
   }
+
   .bgimg-6 {
     min-height: 500px;
   }
+
   /* Bigger texts on images */
-  .bgimg > h1 {
+  .bgimg>h1 {
     font-size: 3.5em;
     letter-spacing: 20px;
   }
-  .bgimg > h2 {
+
+  .bgimg>h2 {
     font-size: 2.4em;
     letter-spacing: 20px;
   }
-  .bgimg ~ section,
+
+  .bgimg~section,
   main section:first-child {
     font-size: 1.2em;
     padding: 60px 80px;
