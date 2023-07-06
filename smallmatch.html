@@ -2,16 +2,16 @@
 <html lang="de">
   <head>
     <title>Tischtennis Tunier</title>
-
+    <!-- Import of css files -->
     <link rel="stylesheet" href="static/css/main.css" />
     <link rel="stylesheet" href="static/css/nav2.css" />
     <link rel="icon" href="static/images/favicon.png" />
 
     <meta charset="utf-8" />
-
+    <!-- Import of js files -->
     <script src="static/js/main.js"></script>
     <script src="static/js/nav.js"></script>
-
+    <!-- Custom css -->
     <style>
       .header {
         position: absolute;
@@ -27,17 +27,14 @@
       <div class="bgimg bgimg-4 bgimg-header">
         <h2>Turnier mit 4 Spielern</h2>
       </div>
-      <div class="header">
+      <!-- Navbar -->
+      <nav class="header">
         <ul>
           <li>
-            <a class="link" href="index.html"
-              ><img src="static/images/icons/home.png" /> Home</a
-            >
+            <a class="link" href="index.html"><img src="static/images/icons/home.png" /> Home</a>
           </li>
           <li class="dropdown">
-            <a class="dropbtn link"
-              ><img src="static/images/icons/tabletennis.png" /> Turniere</a
-            >
+            <a class="dropbtn link"><img src="static/images/icons/tabletennis.png" /> Turniere</a>
             <div class="dropdown-content">
               <a href="smallmatch.html">4-Spieler Turnier</a>
               <a href="/#match">8-Spieler Turnier</a>
@@ -45,10 +42,7 @@
             </div>
           </li>
           <li class="dropdown">
-            <a class="link dropbtn"
-              ><img src="static/images/icons/clock.png" /> Vergangene
-              Turniere</a
-            >
+            <a class="link dropbtn"><img src="static/images/icons/clock.png" /> Vergangene Turniere</a>
             <div class="dropdown-content">
               <a href="matches/match_2031.html">Turnier 2031</a>
               <a href="matches/match_2030.html">Turnier 2030</a>
@@ -57,17 +51,16 @@
             </div>
           </li>
           <li>
-            <a class="link" href="winner.html"
-              ><img src="static/images/icons/medaille.png" /> Sieger</a
-            >
+            <a class="link" href="winner.html"><img src="static/images/icons/medaille.png" /> Sieger</a>
           </li>
         </ul>
-      </div>
+      </nav>
       <section>
         <p>
           Das Tunier findet statt am
           <time datetime="2032-08-23T08:00:00">23.08.2032 08:00</time>
         </p>
+        <!-- Participant table -->
         <table>
           <tr>
             <td>Utz</td>
@@ -86,18 +79,12 @@
           </tr>
         </table>
         <h2>Es sind leider keine Plätze mehr frei!</h2>
+        <!-- Winner steps -->
         <div class="podest">
           <space></space>
-          <zweiter
-            >xx <img src="static/images/icons/silbermedaille.png"
-          /></zweiter>
-          <erster
-            >Hier könnte dein Name stehen
-            <img src="static/images/icons/goldmedaille.png"
-          /></erster>
-          <dritter
-            >xx <img src="static/images/icons/bronzemedaille.png"
-          /></dritter>
+          <zweiter>xx <img src="static/images/icons/silbermedaille.png" /></zweiter>
+          <erster>Hier könnte dein Name stehen <img src="static/images/icons/goldmedaille.png" /></erster>
+          <dritter>xx <img src="static/images/icons/bronzemedaille.png" /></dritter>
           <space></space>
         </div>
         <p>Wir wünschen viel Erfolg!</p>

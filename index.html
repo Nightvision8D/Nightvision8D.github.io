@@ -2,28 +2,29 @@
 <html lang="de">
   <head>
     <title>Tischtennis Tunier</title>
-
+    <!-- Import of css files -->
     <link rel="stylesheet" href="static/css/main.css" />
     <link rel="stylesheet" href="static/css/index.css" />
     <link rel="stylesheet" href="static/css/nav2.css" />
-
+    <!-- Import of js files -->
     <script src="static/js/main.js"></script>
     <script src="static/js/nav.js"></script>
     <script src="static/js/winner.js"></script>
-
+    <!-- Import favicon -->
     <link rel="icon" href="static/images/favicon.png" />
 
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width initial-scale=1" />
   </head>
   <body>
+    <!-- Parallax img -->
     <div class="bgimg bgimg-1 bgimg-header">
       <a href="#fn01" id="fnref01">[1]</a>
       <h1>Tischtennis Tunier</h1>
       <a href="#start" class="scroll"><span></span>Scroll</a>
     </div>
-
-    <div class="header">
+    <!-- Navlist -->
+    <nav class="header">
       <ul>
         <li>
           <a class="link" href="index.html"><img src="static/images/icons/home.png" /> Home</a>
@@ -49,7 +50,7 @@
           <a class="link" href="winner.html"><img src="static/images/icons/medaille.png" /> Sieger</a>
         </li>
       </ul>
-    </div>
+    </nav>
 
     <main>
       <section id="start">
@@ -63,6 +64,7 @@
         Hier klären wir alles nötige für einen reibungslosen Start in das Tunier!
         <p>Erstmal danke für dein Interesse. Damit du alles weißt schau dir bitte auf jeden Fall alles auf dieser Website an!</p>
       </section>
+      <!-- Paralax img -->
       <div class="bgimg bgimg-2">
         <a href="#fn02" id="fnref02">[2]</a>
         <h2>Was ist mitzubringen?</h2>
@@ -77,6 +79,7 @@
           <li>Kasten</li>
         </ul>
       </section>
+      <!-- Paralax img -->
       <div class="bgimg bgimg-3">
         <a href="#fn03" id="fnref03">[3]</a>
         <h2>Wie registriert man sich?</h2>
@@ -90,6 +93,7 @@
         </ol>
         <p>Nach diesen 3 Schritten bist du schon registriert und kannst bei unserem Tunier mitspielen.</p>
       </section>
+      <!-- Paralax img -->
       <div class="bgimg bgimg-4">
         <a href="#fn04" id="fnref04">[4]</a>
         <h2>Turnierplan</h2>
@@ -98,6 +102,7 @@
         <h2>Turnier mit 8 Spielern</h2>
         <time datetime="2032-08-23T08:00:00">23.08.2032 08:00</time>
         <button class="button" type="button" style="display: block; margin-right: 0px; margin-left: auto" id="save_button">SPEICHERN</button>
+        <!-- Participant table -->
         <table class="resulttable">
           <tbody>
             <tr>
@@ -157,11 +162,13 @@
             </tr>
           </tbody>
         </table>
+        <!-- Links to other matches -->
         <div class="buttons">
           <h2>Weitere Turniere</h2>
           <a class="button" href="smallmatch.html">4 SPIELER</a>
           <a class="button" href="bigmatch.html">16 SPIELER</a>
         </div>
+        <!-- Winner steps -->
         <div class="podest" style="display: none" id="podest">
           <space></space>
           <zweiter id="step_zweiter"><span>xx</span> <img src="static/images/icons/silbermedaille.png" /></zweiter>
@@ -171,10 +178,12 @@
         </div>
         <p>Wir wünschen allen Teilnehmenden viel Erfolg!</p>
       </section>
+      <!-- Paralax img -->
       <div class="bgimg bgimg-5">
         <a href="#fn05" id="fnref05">[5]</a>
         <h2>Wo findest du uns?</h2>
       </div>
+      <!-- Google maps view -->
       <section id="position">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2629.6601923686126!2d8.9293839!3d48.7692852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479761838f1f1d2b%3A0xe5f90a45afa6efa4!2sRankbachhalle!5e0!3m2!1sde!2sde!4v1686924599279!5m2!1sde!2sde"
@@ -185,10 +194,12 @@
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
+        <!-- Our ultralativ nice music -->
         <audio controls id="spongebob_music">
           <source src="static/music/playback.mp3" type="audio/mpeg" />
         </audio>
       </section>
+      <!-- Paralax img -->
       <div class="bgimg bgimg-6">
         <a href="#fn06" id="fnref06">[6]</a>
         <h2>Rechtliche Informationen</h2>
