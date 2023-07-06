@@ -1,155 +1,163 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <title>Tischtennis Tunier</title>
-    <!--Import of css files-->
-    <link rel="stylesheet" href="../static/css/main.css" />
-    <link rel="stylesheet" href="../static/css/index.css" />
-    <link rel="stylesheet" href="../static/css/nav2.css" />
-    <link rel="stylesheet" href="../static/css/matches.css" />
-    <!--Import of favicon-->
-    <link rel="icon" href="../static/images/favicon.png" />
 
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width initial-scale=1" />
-    <!--Import of js files-->
-    <script src="../static/js/main.js"></script>
-    <script src="../static/js/nav.js"></script>
-  </head>
-  <body>
-    <div class="bgimg bgimg-4 bgimg-header">
-      <h2>Turnier 2028</h2>
-    </div>
-    <nav class="header">
-      <!--Navlist-->
+<head>
+  <title>Tischtennis Tunier</title>
+  <!--Import of css files-->
+  <link rel="stylesheet" href="../static/css/main.css" />
+  <link rel="stylesheet" href="../static/css/index.css" />
+  <link rel="stylesheet" href="../static/css/nav2.css" />
+  <link rel="stylesheet" href="../static/css/matches.css" />
+  <!--Import of favicon-->
+  <link rel="icon" href="../static/images/favicon.png" />
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <!--Import of js files-->
+  <script src="../static/js/main.js"></script>
+  <script src="../static/js/nav.js"></script>
+</head>
+
+<body>
+  <div class="bgimg bgimg-4 bgimg-header">
+    <h2>Turnier 2028</h2>
+  </div>
+  <nav class="header">
+    <!--Navlist-->
+    <ul>
+      <li>
+        <a class="link" href="../index.html"><img src="../static/images/icons/home.png" alt="Home icon" /> Home</a>
+      </li>
+      <li class="dropdown">
+        <a class="dropbtn link"><img src="../static/images/icons/tabletennis.png" alt="Table tennis icon" />
+          Turniere</a>
+        <div class="dropdown-content">
+          <a href="../smallmatch.html">4-Spieler Turnier</a>
+          <a href="../index.html#match">8-Spieler Turnier</a>
+          <a href="../bigmatch.html">16-Spieler Turnier</a>
+        </div>
+      </li>
+      <li class="dropdown">
+        <a class="link dropbtn"><img src="../static/images/icons/clock.png" alt="Clock icon" /> Vergangene Turniere</a>
+        <div class="dropdown-content">
+          <a href="match_2031.html">Turnier 2031</a>
+          <a href="match_2030.html">Turnier 2030</a>
+          <a href="match_2029.html">Turnier 2029</a>
+          <a href="match_2028.html">Turnier 2028</a>
+        </div>
+      </li>
+      <li>
+        <a class="link" href="../winner.html"><img src="../static/images/icons/medaille.png" alt="Medaille" />
+          Sieger</a>
+      </li>
+    </ul>
+  </nav>
+  <section>
+    <h2>Turnierdetails</h2>
+    <table class="info">
+      <tr>
+        <td>Nr.</td>
+        <td>1</td>
+      </tr>
+      <tr>
+        <td>Datum</td>
+        <td><time datetime="2028-04-02">02.04.2028</time></td>
+      </tr>
+      <tr>
+        <td>Ort</td>
+        <td>Bikini Bottom</td>
+      </tr>
+      <tr>
+        <td>Teilnehmerliste</td>
+        <td>
+          <ul>
+            <li>Jutta</li>
+            <li>Henrike</li>
+            <li>Lilli</li>
+            <li>Klara</li>
+            <li>Tanja</li>
+            <li>Berthold</li>
+            <li>Moritz</li>
+            <li>Bartholomäus</li>
+          </ul>
+        </td>
+      </tr>
+    </table>
+    <div class="info-list">
+      <h4>Nr.</h4>
+      <p>1</p>
+      <h4>Datum</h4>
+      <p><time datetime="2028-04-02">02.04.2028</time></p>
+      <h4>Ort</h4>
+      <p>Bikini Bottom</p>
+      <h4>Teilnehmerliste</h4>
       <ul>
-        <li>
-          <a class="link" href="../index.html"><img src="../static/images/icons/home.png" alt="Home icon" /> Home</a>
-        </li>
-        <li class="dropdown">
-          <a class="dropbtn link"><img src="../static/images/icons/tabletennis.png" alt="Table tennis icon" /> Turniere</a>
-          <div class="dropdown-content">
-            <a href="../smallmatch.html">4-Spieler Turnier</a>
-            <a href="../index.html#match">8-Spieler Turnier</a>
-            <a href="../bigmatch.html">16-Spieler Turnier</a>
-          </div>
-        </li>
-        <li class="dropdown">
-          <a class="link dropbtn"><img src="../static/images/icons/clock.png" alt="Clock icon" /> Vergangene Turniere</a>
-          <div class="dropdown-content">
-            <a href="match_2031.html">Turnier 2031</a>
-            <a href="match_2030.html">Turnier 2030</a>
-            <a href="match_2029.html">Turnier 2029</a>
-            <a href="match_2028.html">Turnier 2028</a>
-          </div>
-        </li>
-        <li>
-          <a class="link" href="../winner.html"><img src="../static/images/icons/medaille.png" alt="Medaille" /> Sieger</a>
-        </li>
+        <li>Jutta</li>
+        <li>Henrike</li>
+        <li>Lilli</li>
+        <li>Klara</li>
+        <li>Tanja</li>
+        <li>Berthold</li>
+        <li>Moritz</li>
+        <li>Bartholomäus</li>
       </ul>
-    </nav>
-    <section>
-      <h2>Turnierdetails</h2>
-      <table class="info">
+    </div>
+  </section>
+  <hr />
+  <!--Match result-->
+  <section>
+    <h2>Turnierablauf</h2>
+    <table>
+      <tbody>
         <tr>
-          <td>Nr.</td>
-          <td>1</td>
+          <td>Jutta (12)</td>
+          <td rowspan="2">Jutta (9)</td>
+          <td rowspan="4">Lilli (12)</td>
+          <td rowspan="8">Lilli</td>
         </tr>
         <tr>
-          <td>Datum</td>
-          <td><time datetime="2028-04-02">02.04.2028</time></td>
+          <td>Henrike (10)</td>
         </tr>
         <tr>
-          <td>Ort</td>
-          <td>Bikini Bottom</td>
+          <td>Lilli (11)</td>
+          <td rowspan="2">Lilli (11)</td>
         </tr>
         <tr>
-          <td>Teilnehmerliste</td>
-          <td>
-            <ul>
-              <li>Jutta</li>
-              <li>Henrike</li>
-              <li>Lilli</li>
-              <li>Klara</li>
-              <li>Tanja</li>
-              <li>Berthold</li>
-              <li>Moritz</li>
-              <li>Bartholomäus</li>
-            </ul>
-          </td>
+          <td>Klara (5)</td>
         </tr>
-      </table>
-      <div class="info-list">
-        <h4>Nr.</h4>
-        <p>1</p>
-        <h4>Datum</h4>
-        <p><time datetime="2028-04-02">02.04.2028</time></p>
-        <h4>Ort</h4>
-        <p>Bikini Bottom</p>
-        <h4>Teilnehmerliste</h4>
-        <ul>
-          <li>Jutta</li>
-          <li>Henrike</li>
-          <li>Lilli</li>
-          <li>Klara</li>
-          <li>Tanja</li>
-          <li>Berthold</li>
-          <li>Moritz</li>
-          <li>Bartholomäus</li>
-        </ul>
-      </div>
-    </section>
-    <hr />
-    <!--Match result-->
-    <section>
-      <h2>Turnierablauf</h2>
-      <table>
-        <tbody>
-          <tr>
-            <td>Jutta (12)</td>
-            <td rowspan="2">Jutta (9)</td>
-            <td rowspan="4">Lilli (12)</td>
-            <td rowspan="8">Lilli</td>
-          </tr>
-          <tr>
-            <td>Henrike (10)</td>
-          </tr>
-          <tr>
-            <td>Lilli (11)</td>
-            <td rowspan="2">Lilli (11)</td>
-          </tr>
-          <tr>
-            <td>Klara (5)</td>
-          </tr>
-          <tr>
-            <td>Tanja (11)</td>
-            <td rowspan="2">Tanja (7)</td>
-            <td rowspan="4">Bartholomäus (10)</td>
-          </tr>
-          <tr>
-            <td>Berthold (4)</td>
-          </tr>
-          <tr>
-            <td>Moritz (7)</td>
-            <td rowspan="2">Bartholomäus (11)</td>
-          </tr>
-          <tr>
-            <td>Bartholomäus (11)</td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
-    <hr />
-    <section>
-      <h2>Siegertreppe</h2>
-      <div class="podest" id="podest">
-        <div></div>
-        <div id="step_zweiter" class="zweiter"><span>xx</span> <img src="../static/images/icons/silbermedaille.png" alt="silbermedaille" /></div>
-        <div class="erster" id="step_erster"><span>Hier könnte dein Name stehen</span> <img src="../static/images/icons/goldmedaille.png" alt="goldmedaille" /></div>
-        <div class="dritter" id="step_dritter"><span>xx</span> <img src="../static/images/icons/bronzemedaille.png" alt="bronzemedaille" /></div>
-        <div></div>
-      </div>
-      <h3 style="text-align: center">Herzlichen Glückwunsch an Lilli zum Sieg des Turniers 2028!</h3>
-    </section>
-  </body>
+        <tr>
+          <td>Tanja (11)</td>
+          <td rowspan="2">Tanja (7)</td>
+          <td rowspan="4">Bartholomäus (10)</td>
+        </tr>
+        <tr>
+          <td>Berthold (4)</td>
+        </tr>
+        <tr>
+          <td>Moritz (7)</td>
+          <td rowspan="2">Bartholomäus (11)</td>
+        </tr>
+        <tr>
+          <td>Bartholomäus (11)</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <hr />
+  <section>
+    <h2>Siegertreppe</h2>
+    <div class="podest" id="podest">
+      <div></div>
+      <div id="step_zweiter" class="zweiter"><span>Bartholomäus</span> <img
+          src="../static/images/icons/silbermedaille.png" alt="silbermedaille" /></div>
+      <div class="erster" id="step_erster"><span>Lilli</span> <img src="../static/images/icons/goldmedaille.png"
+          alt="goldmedaille" /></div>
+      <div class="dritter" id="step_dritter"><span>Jutta</span> <img src="../static/images/icons/bronzemedaille.png"
+          alt="bronzemedaille" /></div>
+      <div></div>
+    </div>
+    <h3 style="text-align: center">Herzlichen Glückwunsch an Lilli zum Sieg des Turniers 2028!</h3>
+  </section>
+</body>
+
 </html>
