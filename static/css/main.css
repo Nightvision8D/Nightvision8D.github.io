@@ -63,11 +63,11 @@ table+p {
 }
 
 .botbox {
-  border-width: 1px 3px 3px 3px;
+  border-width: 1px 0px 3px 3px;
 }
 
 .winner {
-  border-width: 3px;
+  border-width: 3px 3px 3px 3px;
 }
 
 /* Button style */
